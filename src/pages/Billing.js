@@ -413,7 +413,7 @@ const Billing = () => {
     }
   };
 
-  // Save bill to MongoDB and update stock
+  // Save bill to Firebase and update stock
   const saveBill = async () => {
     try {
       setLoading(true);
@@ -811,7 +811,7 @@ const Billing = () => {
   const printAndSaveBill = async () => {
     try {
       setLoading(true);
-      await saveBill(); // Save to MongoDB and update stock
+      await saveBill(); // Save to Firebase and update stock
       printBill(); // Then print the receipt
       setIsPrintPreview(false);
       setLoading(false);
