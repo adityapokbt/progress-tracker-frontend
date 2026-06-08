@@ -78,7 +78,7 @@
     "wait-on": "^8.0.4"
   },
   "main": "public/electron.js",
-  "homepage": "./",
+  
   "build": {
     "appId": "com.yourcompany.inventoryapp",
     "productName": "Inventory Management System",
